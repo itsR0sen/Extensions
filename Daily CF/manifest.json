@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "CF Daily",
+    "name": "Daily CF",
     "version": "1.0",
     "description": "Get daily Codeforces problem suggestions.",
     "permissions": ["storage", "activeTab", "scripting"],

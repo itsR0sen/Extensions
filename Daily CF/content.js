@@ -29,7 +29,7 @@ chrome.storage.sync.get(["cfUsername"], async (data) => {
     // Caption
     const caption = document.createElement("div");
     caption.className = "caption titled";
-    caption.textContent = "→ CF Daily";
+    caption.textContent = "→ Daily CF";
 
     const lastUptTime = document.createElement("span");
     lastUptTime.style.fontSize = "0.8em";
