@@ -1,23 +1,20 @@
-/* ---------- Base body ---------- */
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
         Arial;
-    background-color: #ffffff; /* Light bg */
-    color: #111827; /* Dark text */
+    background-color: #ffffff;
+    color: #111827;
     transition: background-color 0.35s ease, color 0.35s ease;
 }
 body.dark-mode {
-    background-color: #212121; /* Dark bg */
-    color: #e0e0e0; /* Light text */
+    background-color: #212121;
+    color: #e0e0e0;
 }
 
-/* ---------- Headings ---------- */
 h5 {
     margin: 0;
     font-weight: 600;
 }
 
-/* ---------- Input field ---------- */
 .form-control {
     height: 32px;
     transition: all 0.35s ease;
@@ -28,7 +25,7 @@ body.dark-mode .form-control {
     border: 1px solid #3f3f46;
 }
 body.dark-mode .form-control::placeholder {
-    color: #9aa0a6; /* Dim placeholder */
+    color: #9aa0a6;
 }
 
 /* ---------- Status message ---------- */
@@ -37,10 +34,9 @@ body.dark-mode .form-control::placeholder {
     transition: opacity 1s ease;
 }
 #status.show {
-    opacity: 1; /* Fade in */
+    opacity: 1;
 }
 
-/* ---------- Card (profile/info) ---------- */
 .card {
     transition: all 0.35s ease;
     border-radius: 6px;
@@ -52,7 +48,6 @@ body.dark-mode .card {
     border: 1px solid #3f3f46;
 }
 
-/* ---------- Profile animation ---------- */
 .profile-animate {
     opacity: 0;
     transform: translateY(10px);
@@ -63,7 +58,6 @@ body.dark-mode .card {
     transform: translateY(0);
 }
 
-/* ---------- List items ---------- */
 .list-group-item {
     background-color: transparent;
     border: none;
@@ -82,7 +76,6 @@ body.dark-mode .list-group-item:hover {
     background-color: rgba(255, 255, 255, 0.12);
 }
 
-/* ---------- Problem links ---------- */
 .list-group-item a {
     flex-grow: 1;
     text-decoration: none;
@@ -98,7 +91,6 @@ body.dark-mode .list-group-item a:hover {
     color: #fff;
 }
 
-/* ---------- Extra info span ---------- */
 .list-group-item span {
     color: #6b7280;
 }
@@ -106,14 +98,12 @@ body.dark-mode .list-group-item span {
     color: #e0e0e0;
 }
 
-/* ---------- Clear button ---------- */
 #clearBtn {
     display: none;
     transition: opacity 0.3s ease;
     margin-top: 10px;
 }
 
-/* ---------- Theme toggle button ---------- */
 .theme-icon {
     position: relative;
     cursor: pointer;
@@ -130,26 +120,24 @@ body.dark-mode .theme-icon {
     background-color: rgba(0, 0, 0, 0.15);
 }
 
-/* ---------- Icons inside toggle ---------- */
 .theme-icon i {
     position: absolute;
     font-size: 1rem;
     transition: opacity 1.5s ease;
 }
 i.sun {
-    opacity: 0; /* Hidden by default */
+    opacity: 0;
 }
 i.moon {
-    opacity: 1; /* Visible in light mode */
+    opacity: 1;
 }
 body.dark-mode i.moon {
-    opacity: 0; /* Hide moon */
+    opacity: 0;
 }
 body.dark-mode i.sun {
-    opacity: 1; /* Show sun */
+    opacity: 1;
 }
 
-/* ---------- Badges (solved/streak) ---------- */
 .badge {
     font-size: 0.75rem;
     padding: 0.25em 0.5em;
