@@ -1,6 +1,6 @@
 Daily CF is my very first solo project — a Chrome extension built to make Codeforces practice simpler, more consistent, and a little more engaging. The motivation was straightforward: competitive programming demands daily effort, but often we spend more time searching for problems than actually solving them. Daily CF automates this process.
 
-What It Does.
+What It Does:
 
 1. Let's you save your Codeforces username and view your profile details directly in the popup (name, rank, profile picture).
 2. Tracks solved problems and shows a running count, along with your maximum streak.
