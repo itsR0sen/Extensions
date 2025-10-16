@@ -1,0 +1,65 @@
+body {
+    font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+    font-size: 0.95rem;
+}
+
+#drop-area {
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+    background-color: #f8f9fa;
+}
+
+#drop-area.dragover {
+    border-color: #007bff;
+    background-color: #e9f7ff;
+}
+
+#preview {
+    max-height: 180px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+body.dark-mode #drop-area {
+    border-color: #555;
+    background-color: #2a2a2a;
+}
+
+body.dark-mode pre {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+}
+
+body.dark-mode button {
+    color: #f0f0f0;
+    border-color: #555;
+}
+
+button i {
+    margin-right: 5px;
+}
+/* Clean icon buttons with no border or background */
+#darkModeToggle,
+#lockToggle {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: inherit; /* keeps icon color consistent with text */
+    padding: 0.25rem 0.5rem;
+}
+
+#darkModeToggle:hover,
+#lockToggle:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* subtle hover for light mode */
+    color: inherit; /* preserve icon color */
+}
+
+body.dark-mode #darkModeToggle:hover,
+body.dark-mode #lockToggle:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* subtle hover in dark mode */
+}

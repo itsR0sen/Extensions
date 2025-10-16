@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "TextLens",
+    "version": "1.0",
+    "description": "Drop an image to extract and magnify text using OCR API",
+    "permissions": ["activeTab", "clipboardWrite", "storage"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/16.png",
+            "48": "icons/48.png",
+            "128": "icons/128.png"
+        }
+    }
+}
